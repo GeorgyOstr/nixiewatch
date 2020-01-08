@@ -1,0 +1,449 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1936 ]
+[d frameptr 6 ]
+"83 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/adc.c
+[e E2701 . `uc
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"10 E:\Programms\Micro\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 E:\Programms\Micro\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 E:\Programms\Micro\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 C:\Users\georg\MPLABXProjects\nixieude.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"15 C:\Users\georg\MPLABXProjects\nixieude.X\main.c
+[v _pwm pwm `(v  1 e 1 0 ]
+"29
+[v _pwm_on pwm_on `(v  1 e 1 0 ]
+"38
+[v _pwm_off pwm_off `(v  1 e 1 0 ]
+"52
+[v _i2c_dly i2c_dly `(v  1 e 1 0 ]
+"57
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+"74
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+"87
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+"100
+[v _i2c_rx i2c_rx `(uc  1 e 1 0 ]
+"126
+[v _i2c_tx i2c_tx `(i  1 e 2 0 ]
+"156
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"161
+[v _showRight showRight `(v  1 e 1 0 ]
+"178
+[v _showLeft showLeft `(v  1 e 1 0 ]
+"191
+[v _show show `(v  1 e 1 0 ]
+"201
+[v _i2c_setreg i2c_setreg `(v  1 e 1 0 ]
+"217
+[v _i2c_getreg i2c_getreg `(uc  1 e 1 0 ]
+"239
+[v _antiPoison antiPoison `(v  1 e 1 0 ]
+"254
+[v _hour_inc hour_inc `(uc  1 e 1 0 ]
+"264
+[v _minute_inc minute_inc `(uc  1 e 1 0 ]
+"276
+[v _main main `(v  1 e 1 0 ]
+"65 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"58 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+"50 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"60
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+[s S226 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"508 E:\Programms\Micro\pic\include\pic16f1936.h
+[u S235 . 1 `S226 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES235  1 e 1 @13 ]
+[s S183 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"570
+[u S192 . 1 `S183 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES192  1 e 1 @14 ]
+"1037
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1057
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1222
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1284
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1346
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S114 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1363
+[u S123 . 1 `S114 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES123  1 e 1 @142 ]
+"1408
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S62 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1617
+[s S71 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S76 . 1 `S62 1 . 1 0 `S71 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES76  1 e 1 @149 ]
+"1728
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1787
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1845
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1986
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"2006
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"2026
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S417 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"2055
+[s S425 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S429 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S432 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[u S435 . 1 `S417 1 . 1 0 `S425 1 . 1 0 `S429 1 . 1 0 `S432 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES435  1 e 1 @157 ]
+"2115
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2187
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S162 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2204
+[u S171 . 1 `S162 1 . 1 0 ]
+[v _LATAbits LATAbits `VES171  1 e 1 @268 ]
+"2249
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S204 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2266
+[u S213 . 1 `S204 1 . 1 0 ]
+[v _LATBbits LATBbits `VES213  1 e 1 @269 ]
+"2311
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S141 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2328
+[u S150 . 1 `S141 1 . 1 0 ]
+[v _LATCbits LATCbits `VES150  1 e 1 @270 ]
+"2373
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"2666
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2693
+[v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
+[s S371 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"2714
+[s S380 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S383 . 1 `S371 1 . 1 0 `S380 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES383  1 e 1 @279 ]
+"3015
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3071
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3129
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3696
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3766
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"4162
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
+"4202
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
+"8074
+[v _PLLR PLLR `VEb  1 e 0 @1238 ]
+"8212
+[v _RE3 RE3 `VEb  1 e 0 @131 ]
+"276 C:\Users\georg\MPLABXProjects\nixieude.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"309
+[v main@dataHours dataHours `uc  1 a 1 15 ]
+"308
+[v main@dataMinutes dataMinutes `uc  1 a 1 14 ]
+"343
+} 0
+"29
+[v _pwm_on pwm_on `(v  1 e 1 0 ]
+{
+"36
+} 0
+"15
+[v _pwm pwm `(v  1 e 1 0 ]
+{
+"27
+} 0
+"38
+[v _pwm_off pwm_off `(v  1 e 1 0 ]
+{
+"49
+} 0
+"264
+[v _minute_inc minute_inc `(uc  1 e 1 0 ]
+{
+[v minute_inc@minute minute `uc  1 a 1 wreg ]
+[v minute_inc@minute minute `uc  1 a 1 wreg ]
+"266
+[v minute_inc@minute minute `uc  1 a 1 1 ]
+"274
+} 0
+"201
+[v _i2c_setreg i2c_setreg `(v  1 e 1 0 ]
+{
+[v i2c_setreg@address address `uc  1 a 1 wreg ]
+"211
+[v i2c_setreg@debug6 debug6 `i  1 a 2 7 ]
+"208
+[v i2c_setreg@debug5 debug5 `i  1 a 2 5 ]
+"205
+[v i2c_setreg@debug4 debug4 `i  1 a 2 3 ]
+"201
+[v i2c_setreg@address address `uc  1 a 1 wreg ]
+[v i2c_setreg@value value `uc  1 p 1 2 ]
+"203
+[v i2c_setreg@address address `uc  1 a 1 9 ]
+"215
+} 0
+"57
+[v _i2c_init i2c_init `(v  1 e 1 0 ]
+{
+"72
+} 0
+"217
+[v _i2c_getreg i2c_getreg `(uc  1 e 1 0 ]
+{
+[v i2c_getreg@address address `uc  1 a 1 wreg ]
+"229
+[v i2c_getreg@debug3 debug3 `i  1 a 2 7 ]
+"224
+[v i2c_getreg@debug2 debug2 `i  1 a 2 5 ]
+"221
+[v i2c_getreg@debug1 debug1 `i  1 a 2 3 ]
+"232
+[v i2c_getreg@data data `uc  1 a 1 10 ]
+"217
+[v i2c_getreg@address address `uc  1 a 1 wreg ]
+"219
+[v i2c_getreg@address address `uc  1 a 1 9 ]
+"237
+} 0
+"126
+[v _i2c_tx i2c_tx `(i  1 e 2 0 ]
+{
+[v i2c_tx@d d `uc  1 a 1 wreg ]
+"128
+[v i2c_tx@x x `uc  1 a 1 4 ]
+"126
+[v i2c_tx@d d `uc  1 a 1 wreg ]
+"129
+[v i2c_tx@b b `i  1 s 2 b ]
+"131
+[v i2c_tx@d d `uc  1 a 1 3 ]
+"152
+} 0
+"87
+[v _i2c_stop i2c_stop `(v  1 e 1 0 ]
+{
+"98
+} 0
+"74
+[v _i2c_start i2c_start `(v  1 e 1 0 ]
+{
+"85
+} 0
+"100
+[v _i2c_rx i2c_rx `(uc  1 e 1 0 ]
+{
+[v i2c_rx@ack ack `uc  1 a 1 wreg ]
+"102
+[v i2c_rx@x x `uc  1 a 1 3 ]
+[v i2c_rx@d d `uc  1 a 1 2 ]
+"100
+[v i2c_rx@ack ack `uc  1 a 1 wreg ]
+"102
+[v i2c_rx@ack ack `uc  1 a 1 1 ]
+"124
+} 0
+"52
+[v _i2c_dly i2c_dly `(v  1 e 1 0 ]
+{
+"55
+} 0
+"254
+[v _hour_inc hour_inc `(uc  1 e 1 0 ]
+{
+[v hour_inc@hour hour `uc  1 a 1 wreg ]
+[v hour_inc@hour hour `uc  1 a 1 wreg ]
+"256
+[v hour_inc@hour hour `uc  1 a 1 1 ]
+"262
+} 0
+"239
+[v _antiPoison antiPoison `(v  1 e 1 0 ]
+{
+"252
+} 0
+"191
+[v _show show `(v  1 e 1 0 ]
+{
+[v show@i i `uc  1 a 1 wreg ]
+[v show@i i `uc  1 a 1 wreg ]
+[v show@time time `l  1 p 4 10 ]
+[v show@i i `uc  1 a 1 1 ]
+"198
+} 0
+"161
+[v _showRight showRight `(v  1 e 1 0 ]
+{
+[v showRight@i i `uc  1 a 1 wreg ]
+[v showRight@i i `uc  1 a 1 wreg ]
+[v showRight@time time `l  1 p 4 3 ]
+[v showRight@i i `uc  1 a 1 9 ]
+"176
+} 0
+"178
+[v _showLeft showLeft `(v  1 e 1 0 ]
+{
+[v showLeft@i i `uc  1 a 1 wreg ]
+[v showLeft@i i `uc  1 a 1 wreg ]
+[v showLeft@time time `l  1 p 4 3 ]
+[v showLeft@i i `uc  1 a 1 9 ]
+"189
+} 0
+"156
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+[v delay_ms@time time `i  1 p 2 0 ]
+"159
+} 0
+"50 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"55 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"97
+} 0
+"60 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"58 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"65 C:\Users\georg\MPLABXProjects\nixieude.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"81
+} 0
+"23 C:\Users\georg\MPLABXProjects\nixieude.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"31
+} 0
